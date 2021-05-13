@@ -1,317 +1,308 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
+
+<script>function displayabs(y) {
+		var x = document.getElementById(y);
+		if (x.style.display == 'block') {
+			x.style.display = 'none';
+		} else {
+			x.style.display = 'block';
+		}
+	}
+	function hide(y) {
+			var x = document.getElementById(y);
+			x.style.display = 'none';
+		}
+</script>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2022.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px Helvetica; color: #0b4cb4; -webkit-text-stroke: #0b4cb4}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    span.s3 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0b4cb4}
-    span.s4 {text-decoration: underline ; font-kerning: none; color: #0b4cb4; -webkit-text-stroke: 0px #0b4cb4}
-  </style>
+<title>Sam Hughes</title>
+<style>
+
+body {
+	background-color: #D1F6FF;
+	font-size: 28px;
+}
+
+#top-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  overflow: hidden;
+  background-color: #333;
+  border: 1px solid #e7e7e7;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#top-menu li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+#top-menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  -webkit-transition: .5s all ease-out;
+	-moz-transition: .5s all ease-out;
+   transition: .5s all ease-out;
+}
+
+#top-menu li.active a {
+    background-color:#00ccff;
+}
+
+#top-menu a:hover {
+    color: #D1F6FF;
+}
+
+#top-menu li:last-child {
+  border-right: none;
+}
+
+
+#about {
+    position: static;
+}
+
+#publications {
+    position: static;
+}
+
+#talks {
+    position: static;
+}
+
+#contact {
+    position: static;
+}
+
+
+.centre {
+  text-align: center;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.padd {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.padl {
+  padding-right: 0px;
+  padding-left: 50px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #999999;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+a:hover {
+  color: blue;
+}
+
+.bord {
+  border: solid black;
+  border-width: 0px 0px 1px 0px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.bort {
+  border: solid black;
+  border-width: 1px 0px 0px 0px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.hitcounter {display: none;}
+
+</style>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;script&gt;function displayabs(y) {</span></p>
-<p class="p1"><span class="s1">                                var x = document.getElementById(y);</span></p>
-<p class="p1"><span class="s1">                                if (x.style.display == 'block') {</span></p>
-<p class="p1"><span class="s1">                                                x.style.display = 'none';</span></p>
-<p class="p1"><span class="s1">                                } else {</span></p>
-<p class="p1"><span class="s1">                                                x.style.display = 'block';</span></p>
-<p class="p1"><span class="s1">                                }</span></p>
-<p class="p1"><span class="s1">                }</span></p>
-<p class="p1"><span class="s1">                function hide(y) {</span></p>
-<p class="p1"><span class="s1">                                                var x = document.getElementById(y);</span></p>
-<p class="p1"><span class="s1">                                                x.style.display = 'none';</span></p>
-<p class="p1"><span class="s1">                                }</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;Tom Hughes&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">body {</span></p>
-<p class="p1"><span class="s1">                background-color: #D1F6FF;</span></p>
-<p class="p1"><span class="s1">                font-size: 28px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#top-menu {</span></p>
-<p class="p1"><span class="s1">  list-style-type: none;</span></p>
-<p class="p1"><span class="s1">  margin: 0;</span></p>
-<p class="p1"><span class="s1">  padding: 0;</span></p>
-<p class="p1"><span class="s1">  padding-right: 50px;</span></p>
-<p class="p1"><span class="s1">  padding-left: 50px;</span></p>
-<p class="p1"><span class="s1">  overflow: hidden;</span></p>
-<p class="p1"><span class="s1">  background-color: #333;</span></p>
-<p class="p1"><span class="s1">  border: 1px solid #e7e7e7;</span></p>
-<p class="p1"><span class="s1">  position: -webkit-sticky; /* Safari */</span></p>
-<p class="p1"><span class="s1">  position: sticky;</span></p>
-<p class="p1"><span class="s1">  top: 0;</span></p>
-<p class="p1"><span class="s1">  z-index: 1;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#top-menu li {</span></p>
-<p class="p1"><span class="s1">  float: left;</span></p>
-<p class="p1"><span class="s1">  border-right: 1px solid #bbb;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#top-menu a {</span></p>
-<p class="p1"><span class="s1">  display: block;</span></p>
-<p class="p1"><span class="s1">  color: white;</span></p>
-<p class="p1"><span class="s1">  text-align: center;</span></p>
-<p class="p1"><span class="s1">  padding: 14px 16px;</span></p>
-<p class="p1"><span class="s1">  text-decoration: none;</span></p>
-<p class="p1"><span class="s1">  -webkit-transition: .5s all ease-out;</span></p>
-<p class="p1"><span class="s1">                -moz-transition: .5s all ease-out;</span></p>
-<p class="p1"><span class="s1">   transition: .5s all ease-out;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#top-menu li.active a {</span></p>
-<p class="p1"><span class="s1">    background-color:#00ccff;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#top-menu a:hover {</span></p>
-<p class="p1"><span class="s1">    color: #D1F6FF;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#top-menu li:last-child {</span></p>
-<p class="p1"><span class="s1">  border-right: none;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#about {</span></p>
-<p class="p1"><span class="s1">    position: static;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#publications {</span></p>
-<p class="p1"><span class="s1">    position: static;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#talks {</span></p>
-<p class="p1"><span class="s1">    position: static;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">#contact {</span></p>
-<p class="p1"><span class="s1">    position: static;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">.centre {</span></p>
-<p class="p1"><span class="s1">  text-align: center;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">.clearfix {</span></p>
-<p class="p1"><span class="s1">  overflow: auto;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">.padd {</span></p>
-<p class="p1"><span class="s1">  padding-right: 50px;</span></p>
-<p class="p1"><span class="s1">  padding-left: 50px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">.padl {</span></p>
-<p class="p1"><span class="s1">  padding-right: 0px;</span></p>
-<p class="p1"><span class="s1">  padding-left: 50px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">a:link {</span></p>
-<p class="p1"><span class="s1">  text-decoration: none;</span></p>
-<p class="p1"><span class="s1">  color: #999999;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">a:visited {</span></p>
-<p class="p1"><span class="s1">  text-decoration: none;</span></p>
-<p class="p1"><span class="s1">  color: #2e2e2e;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">a:hover {</span></p>
-<p class="p1"><span class="s1">  color: blue;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">.bord {</span></p>
-<p class="p1"><span class="s1">  border: solid black;</span></p>
-<p class="p1"><span class="s1">  border-width: 0px 0px 1px 0px;</span></p>
-<p class="p1"><span class="s1">  display: inline-block;</span></p>
-<p class="p1"><span class="s1">  padding: 3px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">.bort {</span></p>
-<p class="p1"><span class="s1">  border: solid black;</span></p>
-<p class="p1"><span class="s1">  border-width: 1px 0px 0px 0px;</span></p>
-<p class="p1"><span class="s1">  display: inline-block;</span></p>
-<p class="p1"><span class="s1">  padding: 3px;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">.hitcounter {display: none;}</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p2"><span class="s2">&lt;script id="MathJax-script" async src="<a href="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"><span class="s3">https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span></a>"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body onload="['a1', 'a2', 'a3', 'a4', 'a5', 'a6'].forEach(hide)"&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;div class="centre"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="clearfix"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;img src="Photo.jpg", height="200", align="right"&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;h1&gt;&lt;span&gt;Sam Hughes&lt;/span&gt;&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;h3&gt;PhD Student, University of Southampton&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;ul id="top-menu"&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;li&gt;&lt;a href="#publications"&gt;Publications and preprints&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;li&gt;&lt;a href="#talks"&gt;Selected talks&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;li&gt;&lt;a href="activities.html"&gt;Recent activities&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;a id="about"&gt;&lt;br&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="padd"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="well-spaced"&gt;Since October 2018 I have been a PhD student at the University of Southampton under the supervision of</span></p>
-<p class="p1"><span class="s1">&lt;a href ="<a href="https://www.southampton.ac.uk/maths/about/staff/ijl1y09.page"><span class="s4">https://www.southampton.ac.uk/maths/about/staff/ijl1y09.page</span></a>" &gt;Professor Ian Leary&lt;/a&gt;.  Before I became a student at</span></p>
-<p class="p1"><span class="s1">Southampton, I completed an MMath degree at the University of South Wales.  In October 2021 I will be joining</span></p>
-<p class="p1"><span class="s1">&lt;a href="<a href="https://people.maths.ox.ac.uk/kielak"><span class="s4">https://people.maths.ox.ac.uk/kielak</span></a>/"&gt;Dr Dawid Kielak's&lt;/a&gt; team in the Mathematical Institute at the University of Oxford&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="well-spaced"&gt;My research is primarily in geometric group theory, often with a topological flavour.  More specifically, I am interested in lattices in</span></p>
-<p class="p1"><span class="s1">locally compact groups, cohomology of arithmetic groups, \(L^2\)-invariants, and \(K\)-theory in relation to the isomorphism conjectures. &lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="well-spaced"&gt;My recent activities</span></p>
-<p class="p1"><span class="s1">can be found &lt;a href="./activities.html"&gt;here&lt;/a&gt;.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p class="well-spaced"&gt;I was one of the organisers of the interdisciplinary seminar series &lt;a href="<a href="https://www.southampton.ac.uk/maths/research/groups/maths-and-mingle.page"><span class="s4">https://www.southampton.ac.uk/maths/research/groups/maths-and-mingle.page</span></a>"&gt;Maths and Mingle&lt;/a&gt;. </span></p>
-<p class="p1"><span class="s1">You can read more about Maths and Mingle in our &lt;a href="Misc/20_May_LMS_Newsletter.pdf"&gt;article&lt;/a&gt; in the</span></p>
-<p class="p2"><span class="s2">May 2020 edition of the &lt;a href="<a href="https://www.lms.ac.uk/publications/lms-newsletter-back-issues"><span class="s3">https://www.lms.ac.uk/publications/lms-newsletter-back-issues</span></a>"&gt;LMS newsletter&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">I am also co-organising the conference &lt;a href="<a href="https://sites.google.com/view/pgtc2020"><span class="s4">https://sites.google.com/view/pgtc2020</span></a>"&gt;Postgraduate Group Theory 2020 (PGTC 2020)&lt;/a&gt;.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;a id="publications"&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="padd"&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;h2&gt;Preprints and publications&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;i&gt; Click titles for abstracts.&lt;/i&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;ol reversed&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt; &lt;div onclick="displayabs('a6')"&gt;Hierarchically hyperbolic groups, products of \(\textrm{CAT(-1)}\) spaces, and</span></p>
-<p class="p1"><span class="s1">virtual torsion-freeness, &lt;i&gt;submitted&lt;/i&gt;.&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="<a href="https://arxiv.org/abs/2105.02847"><span class="s4">https://arxiv.org/abs/2105.02847</span></a>"&gt;arXiv&lt;/a&gt;, &lt;a href="Preprints/2021bSH.pdf"&gt;pdf&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">&lt;div class="padl"&gt;&lt;div class="bord", id="a6"&gt;</span></p>
-<p class="p1"><span class="s1">We prove that a group acting geometrically on a product of proper minimal \(\textrm{CAT(-1)}\) spaces without</span></p>
-<p class="p1"><span class="s1">permuting isometric factors is a hierarchically hyperbolic group. As an application we construct hierarchically</span></p>
-<p class="p1"><span class="s1">hyperbolic groups which are not virtually torsion-free.</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;li&gt; &lt;div onclick="displayabs('a5')"&gt;Graphs and complexes of lattices, &lt;i&gt;submitted&lt;/i&gt;.&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="<a href="https://arxiv.org/abs/2104.13728"><span class="s4">https://arxiv.org/abs/2104.13728</span></a>"&gt;arXiv&lt;/a&gt;, &lt;a href="Preprints/2021aSH.pdf"&gt;pdf&lt;/a&gt;, &lt;a href="Misc/21_BMC_BAMC_Poster.pdf"&gt;poster&lt;/a&gt;, &lt;a href="Misc/040321_ETH_Zurich_JGS_Slides.pdf"&gt;slides&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">&lt;div class="padl"&gt;&lt;div class="bord", id="a5"&gt;</span></p>
-<p class="p1"><span class="s1">We study lattices acting on \(\textrm{CAT}(0)\) spaces via their commensurated</span></p>
-<p class="p1"><span class="s1">subgroups.  To do this we introduce the notions of a graph of lattices and a complex of</span></p>
-<p class="p1"><span class="s1">lattices giving graph and complex of group splittings of \(\textrm{CAT}(0)\) lattices. </span></p>
-<p class="p1"><span class="s1">Using this framework we characterise irreducible uniform \((\textrm{Isom}(\mathbb{E}^n)\times T)\)-lattices</span></p>
-<p class="p1"><span class="s1">by \(C^\ast\)-simplicity and the failure of virtual fibring and biautomaticity.  We</span></p>
-<p class="p1"><span class="s1">construct non-residually finite uniform lattices acting on arbitrary products of</span></p>
-<p class="p1"><span class="s1">right angled buildings and non-biautomatic lattices acting on the product of</span></p>
-<p class="p1"><span class="s1">\(\mathbb{E}^n\) and a right-angled building.  We investigate the residual finiteness,</span></p>
-<p class="p1"><span class="s1">\(L^2\)-cohomology, and \(C^\ast\)-simplicity of \(\textrm{CAT}(0)\) lattices more</span></p>
-<p class="p1"><span class="s1">generally.  Along the way we prove that many right angled Artin groups with rank \(2\)</span></p>
-<p class="p1"><span class="s1">centre are not quasi-isometrically rigid.</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;li&gt; &lt;div onclick="displayabs('a4')"&gt;(With &lt;a href ="<a href="https://math.unice.fr/~indira"><span class="s4">https://math.unice.fr/~indira</span></a>/"&gt;Indira L. Chatterji&lt;/a&gt;</span></p>
-<p class="p2"><span class="s2">and &lt;a href="<a href="https://www.southampton.ac.uk/maths/about/staff/phk1e12.page"><span class="s3">https://www.southampton.ac.uk/maths/about/staff/phk1e12.page</span></a>"&gt;Peter H. Kropholler&lt;/a&gt;) Groups</span></p>
-<p class="p1"><span class="s1">acting on trees and the first \(\ell^2\)-Betti number, &lt;i&gt;submitted&lt;/i&gt;.&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="<a href="https://arxiv.org/abs/2012.13368"><span class="s4">https://arxiv.org/abs/2012.13368</span></a>"&gt;arXiv&lt;/a&gt;,  &lt;a href="Preprints/2020ICSHPK.pdf"&gt;pdf&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">&lt;div class="padl"&gt;&lt;div class="bord", id="a4"&gt;</span></p>
-<p class="p1"><span class="s1">                We generalise results of Thomas, Allcock, Thom-Petersen, and Kar-Niblo to the first \(\ell^2\)-Betti number of quotients of certain</span></p>
-<p class="p1"><span class="s1">                groups acting on trees by subgroups with free actions on the edge sets of the graphs.</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;li&gt; &lt;div onclick="displayabs('a3')"&gt;On the equivariant \(K\)- and \(KO\)-homology of some special linear groups, to appear in &lt;i&gt;Algebraic and Geometric Topology&lt;/i&gt;.&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="<a href="https://arxiv.org/abs/2004.08199"><span class="s4">https://arxiv.org/abs/2004.08199</span></a>"&gt;arXiv&lt;/a&gt;,  &lt;a href="Preprints/2020SH.pdf"&gt;pdf&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">&lt;div class="padl"&gt;&lt;div class="bord", id="a3"&gt;</span></p>
-<p class="p1"><span class="s1">                We compute the equivariant \(KO\)-homology of the classifying space for proper</span></p>
-<p class="p1"><span class="s1">actions of \(\textrm{SL}_3(\mathbb{Z})\) and \(\textrm{GL}_3(\mathbb{Z})\). We also</span></p>
-<p class="p1"><span class="s1">compute the Bredon homology and equivariant \(K\)-homology of the classifying</span></p>
-<p class="p1"><span class="s1">spaces for proper actions of \(\textrm{PSL}_2(\mathbb{Z}[\frac{1}{p}])\) and</span></p>
-<p class="p1"><span class="s1">\(\textrm{SL}_2(\mathbb{Z}[\frac{1}{p}])\) for each prime \(p\). Finally, we prove</span></p>
-<p class="p1"><span class="s1">the Unstable Gromov-Lawson-Rosenberg Conjecture for a large class of groups</span></p>
-<p class="p1"><span class="s1">whose maximal finite subgroups are odd order and have periodic cohomology.</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;li&gt; &lt;div onclick="displayabs('a2')"&gt;Cohomology of Fuchsian groups and non-Euclidean crystallographic groups, &lt;i&gt;submitted&lt;/i&gt;.&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="<a href="https://arxiv.org/abs/1910.00519"><span class="s4">https://arxiv.org/abs/1910.00519</span></a>"&gt;arXiv&lt;/a&gt;,  &lt;a href="Preprints/2019SH.pdf"&gt;pdf&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">&lt;div class="padl"&gt;&lt;div class="bord", id="a2"&gt;</span></p>
-<p class="p1"><span class="s1">                                For each geometrically finite non-Euclidean crystallographic group (NEC group), we compute the cohomology groups.</span></p>
-<p class="p1"><span class="s1">                                In the case where the group is a Fuchsian group, we also determine the ring structure of the cohomology. Finally, we compute the \(L^2\)-Betti numbers of the NEC groups.</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;li&gt; &lt;div onclick="displayabs('a1')"&gt;(With &lt;a href="<a href="https://nickpgill.github.io/"><span class="s4">https://nickpgill.github.io</span></a>/"&gt;Nick Gill&lt;/a&gt;) The character table of a sharply \(5\)-transitive subgroup of the alternating group of degree \(12\), &lt;i&gt;International Journal of Group Theory&lt;/i&gt; (2021) &lt;b&gt;10&lt;/b&gt;, no.1, 11-30.&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;a href="<a href="https://dx.doi.org/10.22108/ijgt.2019.115366.1531"><span class="s4">https://dx.doi.org/10.22108/ijgt.2019.115366.1531</span></a>"&gt;Journal&lt;/a&gt;,  &lt;a href="<a href="https://arxiv.org/abs/1806.09510"><span class="s4">https://arxiv.org/abs/1806.09510</span></a>"&gt;arXiv&lt;/a&gt;,  &lt;a href="Preprints/2018NGSH.pdf"&gt;pdf&lt;/a&gt;.</span></p>
-<p class="p1"><span class="s1">&lt;div class="padl"&gt;&lt;div class="bord", id="a1"&gt;</span></p>
-<p class="p1"><span class="s1">                In this paper we calculate the character table of a sharply \(5\)-transitive subgroup of \({\rm Alt}(12)\), and of a sharply \(4\)-transitive subgroup of \( \rm{Alt}(11\)).</span></p>
-<p class="p1"><span class="s1">                Our presentation of these calculations is new because we make no reference to the sporadic simple Mathieu groups, and instead deduce the desired character tables using only the existence of the stated multiply transitive permutation representations.</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/ol&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;a id="talks"&gt;&lt;br&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="padd"&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;h2&gt;Selected talks&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;May 2021, &lt;i&gt;Lattices in non-positive curvature&lt;/i&gt;, &lt;a href="<a href="https://warwick.ac.uk/fac/sci/maths/research/events/seminars/areas/dagger"><span class="s4">https://warwick.ac.uk/fac/sci/maths/research/events/seminars/areas/dagger</span></a>/"&gt;Warwick DAGGER.&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;May 2021, &lt;i&gt;Lattices in non-positive curvature&lt;/i&gt;, &lt;a href="<a href="http://www.maths.ox.ac.uk/node/38990"><span class="s4">http://www.maths.ox.ac.uk/node/38990</span></a>"&gt;Oxford junior topology and geometry seminar.&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;April 2021, &lt;i&gt;The Unstable Gromov-Lawson-Rosenberg Conjecture&lt;/i&gt;, Southampton Topology Seminar.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;March 2021, &lt;i&gt;Lattices in non-positive curvature&lt;/i&gt;, &lt;a href="<a href="https://math.ethz.ch/news-and-events/events/research-seminars/geometry-graduate-colloquium.html?s=fs21"><span class="s4">https://math.ethz.ch/news-and-events/events/research-seminars/geometry-graduate-colloquium.html?s=fs21</span></a>"&gt;ETH Zurich Geometry graduate colloquium.&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;March 2021, &lt;i&gt;Isometry groups of \(\textrm{CAT}(0)\) spaces&lt;/i&gt;, &lt;a href="<a href="https://sebastiandchenery.wordpress.com/pure-pgr-seminar"><span class="s4">https://sebastiandchenery.wordpress.com/pure-pgr-seminar</span></a>/"&gt;Southampton PGR Seminar (online edition).&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;February 2021, &lt;i&gt;Lattices in non-positive curvature&lt;/i&gt;, &lt;a href="<a href="https://www.imperial.ac.uk/events/129375/sam-hughes"><span class="s4">https://www.imperial.ac.uk/events/129375/sam-hughes</span></a>/"&gt;Junior London Algebra Colloquium.&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;December 2020, &lt;i&gt;Spotting infinite groups&lt;/i&gt;, Southampton Lunchtime Seminar.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;November 2020, &lt;i&gt;The unstable Gromov-Lawson-Rosenberg conjecture for certain \(S\)-arithmetic groups&lt;/i&gt;, New Directions in Group Theory and Triangulated Categories.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;August 2020, &lt;i&gt;The grandest induction&lt;/i&gt;, &lt;a href="<a href="http://www.southampton.ac.uk/~gb7g14/PGRSeminar.html"><span class="s4">http://www.southampton.ac.uk/~gb7g14/PGRSeminar.html</span></a>"&gt;Southampton PGR Seminar (online edition).&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;July 2020, &lt;i&gt;On the unstable Gromov-Lawson-Rosenberg conjecture&lt;/i&gt;, &lt;a href="<a href="https://dzackgarza.com/GOATS/2020/July"><span class="s4">https://dzackgarza.com/GOATS/2020/July</span></a>/"&gt;Graduate Online Anything Topology Series #3.&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;November 2019, &lt;i&gt;Cohomology of NEC groups&lt;/i&gt;, Southampton Lunchtime Seminar. &lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;October 2019, &lt;i&gt;Lattices, trees and symmetric spaces&lt;/i&gt;, &lt;a href="<a href="https://maths.research.southwales.ac.uk/upcoming-seminars/sam-hughes-group-theory"><span class="s4">https://maths.research.southwales.ac.uk/upcoming-seminars/sam-hughes-group-theory</span></a>/"&gt;USW Mathematical Sciences Seminars&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;October 2019, &lt;i&gt;Vector bundles and \(K\)-theory&lt;/i&gt;, &lt;a href="<a href="https://www.southampton.ac.uk/~ms18g18/tuesdayevenings.html"><span class="s4">https://www.southampton.ac.uk/~ms18g18/tuesdayevenings.html</span></a>"&gt;Southampton Tuesday Evening Seminar&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;July 2019, &lt;i&gt;The cohomology of cocompact Fuchsian groups&lt;/i&gt;, &lt;a href="<a href="http://web.mat.bham.ac.uk/pgtc19"><span class="s4">http://web.mat.bham.ac.uk/pgtc19</span></a>/"&gt;Postgraduate Group Theory Conference 2019.&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;May 2019, &lt;i&gt;Fuchsian groups and the geometry of surfaces&lt;/i&gt;, &lt;a href="<a href="https://sites.google.com/view/brijges/home"><span class="s4">https://sites.google.com/view/brijges/home</span></a>"&gt;Bristol Junior Geometry Seminar&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;February 2019, &lt;i&gt;Some non-Hopfian groups and their geometries&lt;/i&gt;, Southampton PGR Seminar.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;May 2018, &lt;i&gt;The character table of a sharply \(5\)-transitive subgroup of \({\rm Alt}(12)\)&lt;/i&gt;, &lt;a href="<a href="https://nickpgill.github.io/gregynog2018"><span class="s4">https://nickpgill.github.io/gregynog2018</span></a>"&gt;Gregynog 2018&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;a id="contact"&gt;&lt;br&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="padd"&gt;</span></p>
-<p class="p1"><span class="s1">                &lt;h2&gt;Contact&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;strong&gt;Email:&lt;/strong&gt; <a href="mailto:sam.hughes@soton.ac.uk"><span class="s4">sam.hughes@soton.ac.uk</span></a> &lt;br&gt;</span></p>
-<p class="p1"><span class="s1">&lt;strong&gt;Office:&lt;/strong&gt; Room 9007, Building 54, Highfield Campus &lt;br&gt; &lt;br&gt;</span></p>
-<p class="p2"><span class="s2">My institutional page is &lt;a href="<a href="https://www.southampton.ac.uk/maths/postgraduate/research_students/sh5n18.page"><span class="s3">https://www.southampton.ac.uk/maths/postgraduate/research_students/sh5n18.page</span></a>"&gt;here&lt;/a&gt;. &lt;br&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p2"><span class="s2">&lt;a href="<a href="https://www.researchgate.net/profile/Sam_Hughes8"><span class="s3">https://www.researchgate.net/profile/Sam_Hughes8</span></a>"&gt;ResearchGate.&lt;/a&gt;  &lt;a href="<a href="https://scholar.google.com/citations?hl=en&amp;user=4tY-4FkAAAAJ"><span class="s3">https://scholar.google.com/citations?hl=en&amp;user=4tY-4FkAAAAJ</span></a>"&gt;Scholar.&lt;/a&gt;&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="padd"&gt;&lt;div itemscope itemtype="<a href="https://schema.org/Person"><span class="s4">https://schema.org/Person</span></a>"&gt;&lt;a itemprop="sameAs" content="<a href="https://orcid.org/0000-0002-9992-4443"><span class="s4">https://orcid.org/0000-0002-9992-4443</span></a>" href="<a href="https://orcid.org/0000-0002-9992-4443"><span class="s4">https://orcid.org/0000-0002-9992-4443</span></a>" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"&gt;&lt;img src="<a href="https://orcid.org/sites/default/files/images/orcid_16x16.png"><span class="s4">https://orcid.org/sites/default/files/images/orcid_16x16.png</span></a>"  alt="ORCID iD icon"&gt;&lt;/a&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"> </span></p>
-<p class="p1"><span class="s1">&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</span></p>
-<p class="p1"><span class="s1">  </span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<body onload="['a1', 'a2', 'a3', 'a4', 'a5', 'a6'].forEach(hide)">
+
+<div class="centre">
+<div class="clearfix">
+<img src="Photo.jpg", height="200", align="right">
+  <h1><span>Sam Hughes</span></h1>
+  <h3>PhD Student, University of Southampton</h3>
+</div>
+</div>
+
+
+<ul id="top-menu">
+	<li><a href="#about">About</a></li>
+	<li><a href="#publications">Publications and preprints</a></li>
+	<li><a href="#talks">Selected talks</a></li>
+	<li><a href="#contact">Contact</a></li>
+	<li><a href="activities.html">Recent activities</a></li>
+</ul>
+
+<a id="about"><br></a>
+<div class="padd">
+<p class="well-spaced">Since October 2018 I have been a PhD student at the University of Southampton under the supervision of
+<a href ="https://www.southampton.ac.uk/maths/about/staff/ijl1y09.page" >Professor Ian Leary</a>.  Before I became a student at
+Southampton, I completed an MMath degree at the University of South Wales.  In October 2021 I will be joining
+<a href="https://people.maths.ox.ac.uk/kielak/">Dr Dawid Kielak's</a> team in the Mathematical Institute at the University of Oxford</p>
+<p class="well-spaced">My research is primarily in geometric group theory, often with a topological flavour.  More specifically, I am interested in lattices in
+locally compact groups, cohomology of arithmetic groups, \(L^2\)-invariants, and \(K\)-theory in relation to the isomorphism conjectures. </p>
+<p class="well-spaced">My recent activities
+can be found <a href="./activities.html">here</a>.</p>
+<p class="well-spaced">I was one of the organisers of the interdisciplinary seminar series <a href="https://www.southampton.ac.uk/maths/research/groups/maths-and-mingle.page">Maths and Mingle</a>.
+You can read more about Maths and Mingle in our <a href="Misc/20_May_LMS_Newsletter.pdf">article</a> in the
+May 2020 edition of the <a href="https://www.lms.ac.uk/publications/lms-newsletter-back-issues">LMS newsletter</a>.
+ I am also co-organising the conference <a href="https://sites.google.com/view/pgtc2020">Postgraduate Group Theory 2020 (PGTC 2020)</a>.</p>
+</div>
+
+
+
+
+<a id="publications"></a>
+<br>
+<div class="padd">
+	<h2>Preprints and publications</h2>
+	<i> Click titles for abstracts.</i>
+
+<ol reversed>
+<li> <div onclick="displayabs('a6')">Hierarchically hyperbolic groups, products of \(\textrm{CAT(-1)}\) spaces, and
+virtual torsion-freeness, <i>submitted</i>.</div>
+<a href="https://arxiv.org/abs/2105.02847">arXiv</a>, <a href="Preprints/2021bSH.pdf">pdf</a>.
+<div class="padl"><div class="bord", id="a6">
+We prove that a group acting geometrically on a product of proper minimal \(\textrm{CAT(-1)}\) spaces without
+permuting isometric factors is a hierarchically hyperbolic group. As an application we construct hierarchically
+hyperbolic groups which are not virtually torsion-free.
+</div></div>
+<br></li>
+
+<li> <div onclick="displayabs('a5')">Graphs and complexes of lattices, <i>submitted</i>.</div>
+<a href="https://arxiv.org/abs/2104.13728">arXiv</a>, <a href="Preprints/2021aSH.pdf">pdf</a>, <a href="Misc/21_BMC_BAMC_Poster.pdf">poster</a>, <a href="Misc/040321_ETH_Zurich_JGS_Slides.pdf">slides</a>.
+<div class="padl"><div class="bord", id="a5">
+We study lattices acting on \(\textrm{CAT}(0)\) spaces via their commensurated
+subgroups.  To do this we introduce the notions of a graph of lattices and a complex of
+lattices giving graph and complex of group splittings of \(\textrm{CAT}(0)\) lattices.
+Using this framework we characterise irreducible uniform \((\textrm{Isom}(\mathbb{E}^n)\times T)\)-lattices
+by \(C^\ast\)-simplicity and the failure of virtual fibring and biautomaticity.  We
+construct non-residually finite uniform lattices acting on arbitrary products of
+right angled buildings and non-biautomatic lattices acting on the product of
+\(\mathbb{E}^n\) and a right-angled building.  We investigate the residual finiteness,
+\(L^2\)-cohomology, and \(C^\ast\)-simplicity of \(\textrm{CAT}(0)\) lattices more
+generally.  Along the way we prove that many right angled Artin groups with rank \(2\)
+centre are not quasi-isometrically rigid.
+</div></div>
+<br></li>
+
+<li> <div onclick="displayabs('a4')">(With <a href ="https://math.unice.fr/~indira/">Indira L. Chatterji</a>
+and <a href="https://www.southampton.ac.uk/maths/about/staff/phk1e12.page">Peter H. Kropholler</a>) Groups
+acting on trees and the first \(\ell^2\)-Betti number, <i>submitted</i>.</div>
+<a href="https://arxiv.org/abs/2012.13368">arXiv</a>,  <a href="Preprints/2020ICSHPK.pdf">pdf</a>.
+<div class="padl"><div class="bord", id="a4">
+	We generalise results of Thomas, Allcock, Thom-Petersen, and Kar-Niblo to the first \(\ell^2\)-Betti number of quotients of certain
+	groups acting on trees by subgroups with free actions on the edge sets of the graphs.
+</div></div>
+<br></li>
+
+<li> <div onclick="displayabs('a3')">On the equivariant \(K\)- and \(KO\)-homology of some special linear groups, to appear in <i>Algebraic and Geometric Topology</i>.</div>
+<a href="https://arxiv.org/abs/2004.08199">arXiv</a>,  <a href="Preprints/2020SH.pdf">pdf</a>.
+<div class="padl"><div class="bord", id="a3">
+	We compute the equivariant \(KO\)-homology of the classifying space for proper
+actions of \(\textrm{SL}_3(\mathbb{Z})\) and \(\textrm{GL}_3(\mathbb{Z})\). We also
+compute the Bredon homology and equivariant \(K\)-homology of the classifying
+spaces for proper actions of \(\textrm{PSL}_2(\mathbb{Z}[\frac{1}{p}])\) and
+\(\textrm{SL}_2(\mathbb{Z}[\frac{1}{p}])\) for each prime \(p\). Finally, we prove
+the Unstable Gromov-Lawson-Rosenberg Conjecture for a large class of groups
+whose maximal finite subgroups are odd order and have periodic cohomology.
+</div></div>
+<br></li>
+
+<li> <div onclick="displayabs('a2')">Cohomology of Fuchsian groups and non-Euclidean crystallographic groups, <i>submitted</i>.</div>
+<a href="https://arxiv.org/abs/1910.00519">arXiv</a>,  <a href="Preprints/2019SH.pdf">pdf</a>.
+<div class="padl"><div class="bord", id="a2">
+		For each geometrically finite non-Euclidean crystallographic group (NEC group), we compute the cohomology groups.
+		In the case where the group is a Fuchsian group, we also determine the ring structure of the cohomology. Finally, we compute the \(L^2\)-Betti numbers of the NEC groups.
+</div></div>
+<br></li>
+
+<li> <div onclick="displayabs('a1')">(With <a href="https://nickpgill.github.io/">Nick Gill</a>) The character table of a sharply \(5\)-transitive subgroup of the alternating group of degree \(12\), <i>International Journal of Group Theory</i> (2021) <b>10</b>, no.1, 11-30.</div>
+<a href="https://dx.doi.org/10.22108/ijgt.2019.115366.1531">Journal</a>,  <a href="https://arxiv.org/abs/1806.09510">arXiv</a>,  <a href="Preprints/2018NGSH.pdf">pdf</a>.
+<div class="padl"><div class="bord", id="a1">
+	In this paper we calculate the character table of a sharply \(5\)-transitive subgroup of \({\rm Alt}(12)\), and of a sharply \(4\)-transitive subgroup of \( \rm{Alt}(11\)).
+	Our presentation of these calculations is new because we make no reference to the sporadic simple Mathieu groups, and instead deduce the desired character tables using only the existence of the stated multiply transitive permutation representations.
+</div></div>
+<br></li>
+</ol>
+</div>
+
+
+
+<a id="talks"><br></a>
+<div class="padd">
+	<h2>Selected talks</h2>
+
+<ul>
+<li>May 2021, <i>Lattices in non-positive curvature</i>, <a href="https://warwick.ac.uk/fac/sci/maths/research/events/seminars/areas/dagger/">Warwick DAGGER.</a><br><br></li>
+<li>May 2021, <i>Lattices in non-positive curvature</i>, <a href="http://www.maths.ox.ac.uk/node/38990">Oxford junior topology and geometry seminar.</a><br><br></li>
+<li>April 2021, <i>The Unstable Gromov-Lawson-Rosenberg Conjecture</i>, Southampton Topology Seminar.<br><br></li>
+<li>March 2021, <i>Lattices in non-positive curvature</i>, <a href="https://math.ethz.ch/news-and-events/events/research-seminars/geometry-graduate-colloquium.html?s=fs21">ETH Zurich Geometry graduate colloquium.</a><br><br></li>
+<li>March 2021, <i>Isometry groups of \(\textrm{CAT}(0)\) spaces</i>, <a href="https://sebastiandchenery.wordpress.com/pure-pgr-seminar/">Southampton PGR Seminar (online edition).</a><br><br></li>
+<li>February 2021, <i>Lattices in non-positive curvature</i>, <a href="https://www.imperial.ac.uk/events/129375/sam-hughes/">Junior London Algebra Colloquium.</a><br><br></li>
+<li>December 2020, <i>Spotting infinite groups</i>, Southampton Lunchtime Seminar.<br><br></li>
+<li>November 2020, <i>The unstable Gromov-Lawson-Rosenberg conjecture for certain \(S\)-arithmetic groups</i>, New Directions in Group Theory and Triangulated Categories.<br><br></li>
+<li>August 2020, <i>The grandest induction</i>, <a href="http://www.southampton.ac.uk/~gb7g14/PGRSeminar.html">Southampton PGR Seminar (online edition).</a><br><br></li>
+<li>July 2020, <i>On the unstable Gromov-Lawson-Rosenberg conjecture</i>, <a href="https://dzackgarza.com/GOATS/2020/July/">Graduate Online Anything Topology Series #3.</a><br><br></li>
+<li>November 2019, <i>Cohomology of NEC groups</i>, Southampton Lunchtime Seminar. <br><br></li>
+<li>October 2019, <i>Lattices, trees and symmetric spaces</i>, <a href="https://maths.research.southwales.ac.uk/upcoming-seminars/sam-hughes-group-theory/">USW Mathematical Sciences Seminars</a>.<br><br></li>
+<li>October 2019, <i>Vector bundles and \(K\)-theory</i>, <a href="https://www.southampton.ac.uk/~ms18g18/tuesdayevenings.html">Southampton Tuesday Evening Seminar</a>.<br><br></li>
+<li>July 2019, <i>The cohomology of cocompact Fuchsian groups</i>, <a href="http://web.mat.bham.ac.uk/pgtc19/">Postgraduate Group Theory Conference 2019.</a><br><br></li>
+<li>May 2019, <i>Fuchsian groups and the geometry of surfaces</i>, <a href="https://sites.google.com/view/brijges/home">Bristol Junior Geometry Seminar</a>.<br><br></li>
+<li>February 2019, <i>Some non-Hopfian groups and their geometries</i>, Southampton PGR Seminar.<br><br></li>
+<li>May 2018, <i>The character table of a sharply \(5\)-transitive subgroup of \({\rm Alt}(12)\)</i>, <a href="https://nickpgill.github.io/gregynog2018">Gregynog 2018</a>.<br><br></li>
+</ul>
+</div>
+
+
+<a id="contact"><br></a>
+<div class="padd">
+	<h2>Contact</h2>
+
+<strong>Email:</strong> sam.hughes@soton.ac.uk <br>
+<strong>Office:</strong> Room 9007, Building 54, Highfield Campus <br> <br>
+My institutional page is <a href="https://www.southampton.ac.uk/maths/postgraduate/research_students/sh5n18.page">here</a>. <br>
+
+<a href="https://www.researchgate.net/profile/Sam_Hughes8">ResearchGate.</a>  <a href="https://scholar.google.com/citations?hl=en&user=4tY-4FkAAAAJ">Scholar.</a><br>
+</div>
+<div class="padd"><div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-9992-4443" href="https://orcid.org/0000-0002-9992-4443" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"  alt="ORCID iD icon"></a></div>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<div class="hitcounter">
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7352044&style=0006&nbdigits=5&type=page&initCount=30" title="Web Counter" Alt="counter free"   border="0" >
+</a>
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7547573&style=0006&nbdigits=5&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+</a>
+</div>
+
 </body>
-</html>
