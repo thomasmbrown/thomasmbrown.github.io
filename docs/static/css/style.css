@@ -63,26 +63,17 @@ body {
 
 .rotator {
     height: var(--hh);
+    width: var(--hh);
     display: flex;
     overflow: hidden;
+    align-items: flex-start;
 }
 
 .rotator img {
-    scale: inherit;
+    height: var(--hh);
+    width: var(--hh);
 }
 
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-}
 
 .title {
     flex-grow: 2;
