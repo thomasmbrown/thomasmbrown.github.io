@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas M Brown - Home</title>
+    <link rel = "stylesheet" href = "./static/css/style.css"></link>
+    <link rel = "stylesheet" href = "./static/css/league.css"></link>
+</head>
+<body>
+    <!--A heading panel at the top that contains a rotating image.-->
+    <div id = "head" class = "head">
+        <div id = "nav" class = "nav">
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "maths.html">Maths</a></li>
+                    <li><a href = "other.html">Other</a></li>
+                </ul>
+        </div>
+        
+
+        <div class = "rotator">
+            <img src = "./static/img/scelga1.png" id = "rotating_img">
+        </div>
+
+        <div class = "title">
+            <h1>Other projects</h1>
+        </div>
+    </div>
+
+    <div id = "content" class = "content">
+
+        <div id = "other-row-1" class = "row">
+            <div class = "row-text">
+                <h1>Better Premier League table</h1>
+                <p>
+                    This presents a league table providing a more accurate representation of a teams performance early in the season. It gives an better indication of a relative result. For example drawing to Liverpool has more value than beating Burnley. It does all this without any input on what teams are deemed `good'.
+                </p>
+                <p>
+                    Hovering over a team will indicate which teams the algorithm deems it better than (in green) and which they are doing worse than (in red). It does this by comparing them only on the games they have both played. The table is constructed by rewarding teams that have `beaten' more teams based on this metric.
+                </p>
+                <p>
+                    As things stands this table does not hand teams that are drawing well. This will be added soon.
+                </p>
+            </div>
+            <div class = "row-img">
+                <div id = "league" class = "league">
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "5"> Chelsea </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "3"> Brighton </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "2"> Brentford </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "11"> Man City </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "10"> Liverpool </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "15"> Southampton </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "12"> Man Utd </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "7"> Everton </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "1"> Aston Villa </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "18"> West Ham </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "16"> Spurs </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "19"> Wolves </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "17"> Watford </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "6"> Crystal Palace </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "9"> Leicester </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "4"> Burnley </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "0"> Arsenal </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "13"> Newcastle </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "14"> Norwich </li>
+                    <li onmouseleave = "resetLeague()" onmouseenter = "compare(this)" id = "8"> Leeds </li>
+                </div>
+            </div>
+        </div>
+       
+        <div id = "index-row-0" class = "row" style = "border-bottom: 0px;">
+
+        </div>
+
+    </div>
+
+    <script src="./static/js/script.js"></script>
+    <script src="./static/js/league.js"></script>
+
+</body>
+</html>
