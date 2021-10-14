@@ -44,12 +44,45 @@
             </div>
         </div>
 
+        <div id = "math-row-1" class = "row">
+            <div class = "row-text" style = "width: 100%;">
+                <h1>Papers</h1>
+                <p>Click on a title for more information including an abstract and relevant links.</p>
+                <table>
+                    <tr>
+                        <th style="width: 80%;">Title</th>
+                        <th style="width: 20%;">Status</th>
+                    </tr>
+                    <tr>
+                        <td onclick = "revealRow('hidden_row_1')">Groups of type FP via graphical small cancellation</td>
+                        <td>Accepted</td>
+                    </tr>
+                    <tr style="display: none;" id="hidden_row_1" class="hidden-row">
+                        <td>
+                            <p>Abstract</p>
+                            <p>We construct an uncountable family of groups of type FP. In contrast to every previous construction of non-finitely presented groups of type FP we do not use Morse theory on cubical complexes; instead we use Gromov’s graphical small cancellation theory.</p>
+                        </td>
+                        <td><a href = "https://arxiv.org/abs/2004.04550" target="_blank" rel="noopener noreferrer">arx</a></td>
+                    </tr>
+                    <tr>
+                        <td>Uncountably many quasi-isometry classes of groups of type FP</td>
+                        <td>In progress</td>
+                    </tr>
+                    <tr>
+                        <td>Some spectacular complexes</td>
+                        <td>In progress</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
         <div id = "index-row-0" class = "row" style = "border-bottom: 0px;"></div>
 
     </div>
 
 
     <script src="./static/js/script.js"></script>
+    <script src="./static/js/papers.js"></script>
 
 </body>
 </html>

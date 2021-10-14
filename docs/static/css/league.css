@@ -13,8 +13,3 @@
     list-style-type: none;
     background-color: rgb(240, 240, 240);
 }
-
-.league li:hover {
-    list-style-type: none;
-    background-color: rgb(170, 170, 170);
-}
