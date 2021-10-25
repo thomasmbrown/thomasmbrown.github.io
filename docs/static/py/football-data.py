@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 data = []
 games = []
 
-with open('static/py/epl-2021-GMTStandardTime-2.csv', newline='') as csvfile:
+with open('docs/static/py/epl-2021-GMTStandardTime-2.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter = ',', quotechar = '|')
     for row in reader:
         data.append(row)
