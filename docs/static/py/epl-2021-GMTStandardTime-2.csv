@@ -89,16 +89,16 @@ Match Number,Round Number,Date,Location,Home Team,Away Team,Result
 82,9,24/10/2021 14:00,Brentford Community Stadium,Brentford,Leicester,1 - 2
 90,9,24/10/2021 14:00,London Stadium,West Ham,Spurs,1 - 0
 88,9,24/10/2021 16:30,Old Trafford,Man Utd,Liverpool,0 - 5
-93,10,30/10/2021 12:30,King Power Stadium,Leicester,Arsenal,
-92,10,30/10/2021 15:00,Turf Moor,Burnley,Brentford,
-94,10,30/10/2021 15:00,Anfield,Liverpool,Brighton,
-95,10,30/10/2021 15:00,Etihad Stadium,Man City,Crystal Palace,
-96,10,30/10/2021 15:00,St. James' Park,Newcastle,Chelsea,
-99,10,30/10/2021 15:00,Vicarage Road,Watford,Southampton,
-98,10,30/10/2021 17:30,Tottenham Hotspur Stadium,Spurs,Man Utd,
-97,10,31/10/2021 14:00,Carrow Road,Norwich,Leeds,
-91,10,31/10/2021 16:30,Villa Park,Aston Villa,West Ham,
-100,10,01/11/2021 20:00,Molineux Stadium,Wolves,Everton,
+93,10,30/10/2021 12:30,King Power Stadium,Leicester,Arsenal,0 - 2
+92,10,30/10/2021 15:00,Turf Moor,Burnley,Brentford,3 - 1
+94,10,30/10/2021 15:00,Anfield,Liverpool,Brighton,2 - 2
+95,10,30/10/2021 15:00,Etihad Stadium,Man City,Crystal Palace,0 - 2
+96,10,30/10/2021 15:00,St. James' Park,Newcastle,Chelsea,0 - 3
+99,10,30/10/2021 15:00,Vicarage Road,Watford,Southampton,0 - 1
+98,10,30/10/2021 17:30,Tottenham Hotspur Stadium,Spurs,Man Utd,0 - 3
+97,10,31/10/2021 14:00,Carrow Road,Norwich,Leeds,1 - 2
+91,10,31/10/2021 16:30,Villa Park,Aston Villa,West Ham,1 - 4
+100,10,01/11/2021 20:00,Molineux Stadium,Wolves,Everton,2 - 1
 101,11,06/11/2021 15:00,Emirates Stadium,Arsenal,Watford,
 102,11,06/11/2021 15:00,Brentford Community Stadium,Brentford,Norwich,
 103,11,06/11/2021 15:00,Amex Stadium,Brighton,Newcastle,
